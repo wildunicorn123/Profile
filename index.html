@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    />
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <title>Profile</title>
+    <style>
+    .flip-card {
+    background-color: transparent;
+
+    perspective: 1000px;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: transform 0.8s;
+        transform-style: preserve-3d;
+        }
+.flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+            }
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+.flip-card-back {
+    transform: rotateY(180deg);
+    padding: 10px 50px 30px 10px;
+    }
+.flip-card-front{
+    width:100%;
+    height:100%;
+}
+.img1{
+    width:500px;
+    height:286px;
+}
+h2{
+    text-align:center;
+}
+.shift{
+    text-align:center;
+}
+.row{
+    width:100;
+    margin:0 0 1em 0;
+    padding:0 2.5em;
+}
+.header{
+padding:1em 2em;
+border-bottom: 1px;
+background-image: url(./images/The-Fallen-Angel-Painting.webp);
+left: -70;
+color:black;
+}
+.btn-btn-submit {
+    font-size: pxtoem(17, 16);
+    display: inline-block;
+    padding: 0.74em 1.5em;
+    margin: 1.5em 0 0;
+    color: black;
+    border-width: 0 0 0 0;
+    border-bottom: 5px solid;
+    text-transform: uppercase;
+}
+ul {
+    margin: 0;
+    padding: 2em;
+    list-style: none;
+}
+li {
+    margin: 0 0 0.25em 0;
+    clear: both;
+    display: inline-block;
+    width: 100%;
+    }
+.flex-container{
+    display:flex;
+}
+.float{
+    float:right;
+}
+.logo {
+    width: 40px;
+    height: 40px;
+    border-radius:40px;
+}
+.footer{
+    text-align:center;
+    padding: 10px 10px 10px 10px;
+}
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <!--NAVBAR-->
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img src="./images/Black Neutral Calligraphy Logo.png" width="40" height="32" class="me-2" viewbox="0 0 118 94" role="img">AMBER-KAYE AFRICA</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarText">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#Home_landing">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#Bio_sec">BIO</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" href="#contact_p">CONTACT</a>
+                        </li>
+                    </ul>
+                    <span class="navbar-text">
+                        Aspiring web-developer with a taste for the Arts.
+                    </span>
+                    </div>
+                </div>
+                </nav>
+        </header>
+        <!--END OF NAVBAR-->
+        <a id="Home_landing">
+            <div class="p-5 mb-4 bg-body-secondary rounded-3">
+                <div class="container-fluid py-5">
+                    <h1 class="display-5 fw-bold">Amber-Kaye Africa</h1>
+                    <p class="col-md-8 fs-4">I am an aspiring web-developer. That believes the world can be changed by the touch of a button, whether it is for detonation or just Shift.</p>
+                        <button class="btn btn-primary bg-white btn-lg" type="button"><a href="https://github.com/wildunicorn123">My GitHub</a></button>
+                </div>
+            </div>
+        </a>
+        <!--landing done-->
+        <!--area split-->
+        <div class="row align-items-md-stretch">
+            <!--Bio-->
+            <div class="col-md-6" id="Bio_sec">
+                    <div class="flip-card">
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="./images/Screenshot_20230505_103824.jpg" class="img1">
+                            </div>
+                            <div class="flip-card-back">
+                    <h2>BIO </h2>
+                    <p>I was born in July 2001. I love poetry,music and art.I have a love for web-dev too.My favourite colour is Black.And I believe unicorns exist.I am from Hanover Park and is the eldest of 2. I love the ocean and swimming. I cannot ride a bicycle. I Love anime and fantasy novels. My first introduction to coding was when I was 12(but I do not remember that) and again when I was 17. </p>
+                    <button class="btn btn-outline-dark" type="button"><a href="https://youtu.be/Enq2pFpBz1s">My origin</a></button>
+                </div>
+            </div>
+            </div>
+            <!--bio pt2-->
+            </div>
+            <div class="col-md-6">
+                <div class="h1-100 p-5 bg-body-tertiary border rounded-3">
+                    <p class="placeholder-glow">
+                        <span class="placeholder col-12 text-primary"></span>
+                    </p>
+                    <h2>My Techy-self</h2>
+                    <div class="shift">
+                    <img src="./images/icons8-css3-48.png" alt="css3" class="icn">
+                    <img src="./images/icons8-github-50.png" alt="ghub" class="icn">
+                    <img src="./images/icons8-html-5-is-a-software-solution-stack-that-defines-the-properties-and-behaviors-of-web-page-24.png" alt="html5" class="icn">
+                    <img src="./images/icons8-javascript-64.png" alt="jvs" class="icn">
+                    </div>
+                    <p class="placeholder-wave">
+                        <span class="placeholder col-12"></span>
+                    </p>
+                </div>
+            </div>
+            </div>
+            <!--end of mid sec/bio-->
+            <div class="p-5 mb-4 bg-body-secondary rounded-3">
+                <div class="float">
+                <div class="p-3 m-0 border-0 bd-example">
+                    <div class="card" style="width: 18rem;">
+                    <img src="./images/The-Fallen-Angel-Painting.webp" alt="angel" class="imgg">
+                    <div class="card-body">
+                        <h5 class="card-title">The Fallen Angel</h5>
+                        <p class="card-text">My favourite painting of all time.</p>
+                        <button class="btn btn-primary bg-white btn-lg" type="button"><a href="https://en.wikipedia.org/wiki/The_Fallen_Angel_(painting)">Read More</a></button>
+                    </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="col-md-6" id="contact_p">
+                        <div class="row header">
+                            <h1>Contact me now &nbsp;</h1>
+                            <h3>Let Me Know How I Can Help You.</h3>
+                        </div>
+                        <div class="r-body">
+                            <form action="https://formspree.io/f/mlekzogz" method="post">
+                                <ul>
+                                    <li>
+                                        <p class="lefties">
+                                            <label for="full_name">Full name</label>
+                                            <input type="text" name="first_name" placeholder="Name and surname"/>
+                                        </p>
+                                        <p class="p-right">
+                                            <label for="telephone">Telephone</label>
+                                            <input type="telephone" name="last_name" placeholder="0811236547"/>
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <p>
+                                            <label for="email">Email<span class="req">*</span></label>
+                                            <input type="email" name="email" placeholder="albusdumbledore1233@gmail.com"/>
+                                        </p>
+                                    </li>
+                                    <li><div class="divider"></div></li>
+                                    <li>
+                                        <label for="author_choice">Message</label>
+                                        <textarea cols="46" rows="3" name="Author of choice or book of choice"></textarea>
+                                    </li>
+                                    <li>
+                                        <input class="btn-btn-submit" type="submit" value="Submit"/>
+                                    </li>
+                                </ul>
+                            </form>
+                        </div>
+                    </div>
+                    </div>
+                    <!--end of form-->
+                    <footer>
+                        <section class="footer">
+                            <img src="./images/Black Neutral Calligraphy Logo.png" class="logo">
+                            Amber-Kaye Africa &copy;Copyright 2023
+                        </section>
+                    </footer>
+
+    </main>
+</body>
+</html>
